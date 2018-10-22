@@ -1,0 +1,6 @@
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\bin\Debug\Main.exe.config
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\bin\Debug\Main.exe
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\bin\Debug\Main.pdb
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.csprojResolveAssemblyReference.cache
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.exe
+C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.pdb
