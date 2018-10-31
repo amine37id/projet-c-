@@ -15,7 +15,7 @@ namespace Main.Classes
 	/// </summary>
 	public class ArpSpoof:Attack
 	{
-		protected override string name="arpspoof";
+		private string name="arpspoof";
 
 		
 		public ArpSpoof() // Constructeur
@@ -23,17 +23,17 @@ namespace Main.Classes
 		}
 		
 		
-		public override void analyze(string fichier){
+		/*public override void analyze(string fichier){
 			
-		}
+		}*/
 		
-		public override void makeReport(){
+		/*public override void makeReport(){
 			
-		}
+		}*/
 		
-		public void getArp(string ip){
+		/*public void getArp(string ip){
 			
-		}
+		}*/
 		
 	}
 }

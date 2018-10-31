@@ -18,14 +18,15 @@ namespace Main.Classes
 		private string mac;
 		private string ip;
 		private int interfa;
+		private string mail;
 		
 		public Computer() //Constructeur
 		{
 		}
 		
-		public string [] getDatas(){
+		/*public string [] getDatas(){
 			
-		}
+		}*/
 		
 		
 		//Setter & getter

@@ -25,9 +25,9 @@ namespace Main.Classes
 		{
 		}
 		
-		public string geolocalize(string ip){
+		/*public string geolocalize(string ip){
 			
-		}
+		}*/
 		
 		//Getter & Setter
 		public string getMac(){

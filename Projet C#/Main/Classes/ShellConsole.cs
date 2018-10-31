@@ -20,21 +20,21 @@ namespace Main.Classes
 		{
 		}
 		
-		public void makeProcess(){
+		/*public void makeProcess(){
 			
-		}
+		}*/
 		
-		public void arp(){
+		/*public void arp(){
 			
-		}
+		}*/
 		
-		public void device(){
+		/*public void device(){
 			
-		}
+		}*/
 		
-		public void ActiveSniff(int interfa){
+		/*public void ActiveSniff(int interfa){
 			
-		}
+		}*/
 		
 	}
 }

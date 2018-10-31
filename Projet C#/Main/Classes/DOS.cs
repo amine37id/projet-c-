@@ -15,7 +15,7 @@ namespace Main.Classes
 	/// </summary>
 	public class DOS:Attack
 	{
-		protected override string name="dos";
+		private string name="dos";
 		
 		
 		public DOS() //Constructeur
@@ -23,17 +23,17 @@ namespace Main.Classes
 		}
 		
 		
-		public override void analyze(string fichier){
+		/*public override void analyze(string fichier){
 			
-		}
+		}*/
 		
-		public override void makeReport(){
+		/*public override void makeReport(){
 			
-		}
+		}*/
 		
-		public override void getDataSniff(int interfa){
+		/*public void getDataSniff(int interfa){
 			
-		}
+		}*/
 		
 	}
 }
