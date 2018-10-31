@@ -52,9 +52,10 @@
   <ItemGroup>
     <Compile Include="Classes\ArpSpoof.cs" />
     <Compile Include="Classes\Attack.cs" />
+    <Compile Include="Classes\Attacker.cs" />
+    <Compile Include="Classes\Computer.cs" />
     <Compile Include="Classes\DOS.cs" />
-    <Compile Include="Classes\GraphicInterface.cs" />
-    <Compile Include="Classes\Rapport.cs" />
+    <Compile Include="Classes\ShellConsole.cs" />
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>

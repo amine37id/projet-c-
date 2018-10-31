@@ -15,22 +15,25 @@ namespace Main.Classes
 	/// </summary>
 	public class ArpSpoof:Attack
 	{
+		protected override string name="arpspoof";
+
 		
-		private string attri1;
-		private string attri2;
-		private string attri3;
-		
-		public ArpSpoof()
+		public ArpSpoof() // Constructeur
 		{
 		}
 		
 		
-		public override void methode1(){
+		public override void analyze(string fichier){
 			
 		}
 		
-		public override void methode2(){
+		public override void makeReport(){
 			
 		}
+		
+		public void getArp(string ip){
+			
+		}
+		
 	}
 }

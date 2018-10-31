@@ -7,6 +7,7 @@
  * Pour changer ce modèle utiliser Outils | Options | Codage | Editer les en-têtes standards.
  */
 using System;
+using System.Collections.Generic;
 
 namespace Main
 {
@@ -15,20 +16,24 @@ namespace Main
 	/// </summary>
 	public abstract class Attack
 	{
-		private string attri1;
-		private string attri2;
-		private string attri3;
+		private abstract string name;
+		protected List<Attacker> dataAttacker;
+	
 		
-		public Attack()
+		public Attack() //Constructeur
 		{
 		}
 		
-		public virtual void methode1(){
+		public abstract void analyze(string fichier);
+		public abstract void makeReport();
+		
+		public void alert(){
 			
 		}
 		
-		public virtual void methode2(){
+		public void showReport(){
 			
 		}
+		
 	}
 }
