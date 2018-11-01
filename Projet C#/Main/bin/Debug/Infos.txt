@@ -1,0 +1,14 @@
+   Description. . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Adresse physique . . . . . . . . . . . : 10-C3-7B-AD-6C-40
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.1.48(pr‚f‚r‚) 
+   Description. . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Adresse physique . . . . . . . . . . . : 0A-00-27-00-00-12
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.56.1(pr‚f‚r‚) 
+   Description. . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #3
+   Adresse physique . . . . . . . . . . . : 1A-EE-65-E2-B7-A5
+   Description. . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #4
+   Adresse physique . . . . . . . . . . . : 2A-EE-65-E2-B7-A5
+   Description. . . . . . . . . . . . . . : Qualcomm Atheros AR956x Wireless Network Adapter
+   Adresse physique . . . . . . . . . . . : B8-EE-65-E2-B7-A5
+   Description. . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network) #2
+   Adresse physique . . . . . . . . . . . : B8-EE-65-E2-DC-D5
