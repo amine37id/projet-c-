@@ -13,7 +13,7 @@ using System.Net.Mime;
 using System.Threading;
 using System.ComponentModel;
 
-namespace Main.Classes
+namespace Main
 {
 	/// <summary>
 	/// Description of Attack.

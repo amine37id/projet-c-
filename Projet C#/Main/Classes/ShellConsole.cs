@@ -9,7 +9,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Main.Classes
+namespace Main
 {
 	/// <summary>
 	/// Description of ShellConsole.

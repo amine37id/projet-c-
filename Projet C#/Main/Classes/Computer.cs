@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Main.Classes
+namespace Main
 {
 	/// <summary>
 	/// Description of Computer.
@@ -52,6 +52,14 @@ namespace Main.Classes
 		
 		public void setInterfa(int interfa){
 			this.interfa=interfa;
+		}
+		
+		public string getMail(){
+			return this.mail;
+		}
+		
+		public void setMail(string mail){
+			this.mail=mail;
 		}
 		
 	}

@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Main.Classes
+namespace Main
 {
 	/// <summary>
 	/// Description of ArpSpoof.

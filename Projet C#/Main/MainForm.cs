@@ -26,12 +26,8 @@ namespace Main
 			//
 			InitializeComponent();
 			
-			/*lbProtection.Items.Add("Type de protection :");
-			lbProtection.Items.Add("    - Arp poisoning"); // 4 espaces
-			lbProtection.setFileToListbox(this.openFileDialog.FileName,this.lstValeurs);*/
 			string[] allLinesPro = File.ReadAllLines(@"lbProtection.txt"); // reads all lines from text file
 			lbProtection.Items.AddRange(allLinesPro);
-			//lbProtection.Items.Add("- Arp poisonning");
 			
 			string[] allLinesInfo = File.ReadAllLines(@"lbInfo.txt"); // reads all lines from text file
 			lbInfo.Items.AddRange(allLinesInfo);
@@ -42,7 +38,9 @@ namespace Main
 		}
 		void BtActiverClick(object sender, EventArgs e)
 		{
-	
+			/*Computer computer = new Computer();
+			computer.setMail(tbEmail.Text);
+			lbProtection.Items.Add(computer.getMail());*/
 		}
 		
 		
