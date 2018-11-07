@@ -1,66 +1,138 @@
-﻿/*
- * Created by SharpDevelop.
- * User: VmWindows
- * Date: 31/10/2018
- * Time: 15:48
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Main
 {
-	/// <summary>
-	/// Description of Computer.
-	/// </summary>
 	public class Computer
 	{
-		private string mac;
-		private string ip;
-		private int interfa;
-		private string mail;
+		private String ip;
+		private int interf;
+		private String mac;
+		private String mail;
 		
-		public Computer() //Constructeur
+		
+		public Computer(){}
+
+		
+		public Computer(int numInterf, String mail)
 		{
+			setInterf(numInterf);
+			this.mail = mail;
 		}
 		
-		/*public string [] getDatas(){
+		public void setMail(String newMail)
+		{
+			this.mail = newMail;
+		}	
+
+		
+		public void setInterf(int numInterf)
+		{
+			this.interf = numInterf;
+			//this.setIp(numInterf);
+			//this.setMac(numInterf);
+		}
+		
+		
+		public void FilesUpdate()
+		{
+			Process process = new Process();
+           	ProcessStartInfo info = new ProcessStartInfo();
+	        info.FileName = "cmd.exe";
+	        info.RedirectStandardInput = true;
+	        info.UseShellExecute = false;
 			
-		}*/
-		
-		
-		//Setter & getter
-		public string getMac(){
-			return this.mac;
+	        process.StartInfo = info;
+	        process.StartInfo.UseShellExecute = false; 
+	        process.Start();
+	        
+	        using (StreamWriter sw = process.StandardInput)
+	        {
+	            if (sw.BaseStream.CanWrite)
+	            {
+	                //sw.WriteLine("ipconfig -all | findstr /i \"ipv4 description physi\" > Infos.txt");
+	                sw.WriteLine("cd ..");
+	                sw.WriteLine("cd ..");
+	                //sw.WriteLine("Windump -D > ./bin/Debug/Interfaces.txt");
+	            }
+	        }
 		}
 		
-		public void setMac(string mac){
-			this.mac = mac;
+		public String getInfo(String addr, int choix)
+		{
+			//FilesUpdate();
+			
+	        string[] lines = System.IO.File.ReadAllLines(@"Interfaces.txt");
+	        /*foreach (string line in lines)
+	        {
+	        	Console.WriteLine(line);
+	        }*/
+	        
+	        int nb = 1;
+	        string res = "";
+	        foreach (string line in lines)
+	        {
+	        	if(nb == choix)
+	        	{
+	        		string pattern = "(\\((.*?)\\))";
+	        		Match m = Regex.Match(line, pattern);
+	        		res = m.Value;
+	        		res = res.Substring(1, res.Length - 2);
+	        	}
+	        		
+	        	nb++;
+	        }
+	        
+	        lines = System.IO.File.ReadAllLines(@"Infos.txt");
+	        nb = 1;
+	        String avant = "";
+	        String avantavant = "";
+	        String macRetour = "";
+	        String ipRetour = "";
+	        foreach (string line in lines)
+	        {
+	        	int nbOcc = (avantavant.Length - avantavant.Replace(res,"").Length) / res.Length;
+	        	if(nbOcc > 0)
+	        	{
+	        		macRetour = avant.Substring(44, 17);
+	        		string line2 = line.Substring(44);
+	        		string pattern = "\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b";
+	        		Match m2 = Regex.Match(line2, pattern);
+	        		ipRetour = m2.Value;
+	        	}
+	        	avantavant = avant;
+	        	avant = line;	
+	        }
+	        
+	        if(addr == "ip")
+	        	return ipRetour;
+	        return macRetour;
 		}
 		
-		public string getIp(){
+		
+		
+		public int getInterf()
+		{
+			return this.interf;
+		}
+		
+		public String getIp()
+		{
 			return this.ip;
 		}
 		
-		public void setIp(string ip){
-			this.ip=ip;
+		public String getMac()
+		{
+			return this.mac;
 		}
 		
-		public int getInterfa(){
-			return this.interfa;
-		}
-		
-		public void setInterfa(int interfa){
-			this.interfa=interfa;
-		}
-		
-		public string getMail(){
+		public String getMail()
+		{
 			return this.mail;
 		}
 		
-		public void setMail(string mail){
-			this.mail=mail;
-		}
 		
 	}
 }

@@ -16,25 +16,45 @@ namespace Main
 	/// </summary>
 	public class ShellConsole
 	{
-		public ShellConsole() //Constructeur
+		Process process;
+		
+		public ShellConsole() //Lance l'initialisation quand la classe est appelée
 		{
+			makeProcess();
 		}
 		
-		/*public void makeProcess(){
-			
-		}*/
+		Process makeProcess(){ //Initialisation du processus pour la console
+			process = new Process();
+	        process.StartInfo.FileName = "cmd.exe";
+	        process.StartInfo.RedirectStandardInput = false;
+	        process.StartInfo.UseShellExecute = false;
+	        return process;
+		}
 		
-		/*public void arp(){
-			
-		}*/
+		public void arp(string ip){ // Récupère la résolution ARP d'une adresse et la place dans un fichier text
+			process.StartInfo.Arguments= "/C arp -a | findstr " +ip+ " >> arpTab.txt";
+			process.Start();
+		}
 		
-		/*public void device(){
-			
-		}*/
+		public void clearArpTab(){ // efface le fichier arp
+			process.StartInfo.Arguments= "/C del arpTab.txt";
+			process.Start();
+		}
 		
-		/*public void ActiveSniff(int interfa){
-			
-		}*/
+		public void device(){ // Récupère les interfaces de la machine
+			process.StartInfo.Arguments= "/C WinDump -D > devices.txt";
+			process.Start();
+		}
+		
+		public void ipMac(){ // Récupére l'adresse ip, mac et le nom de la carte
+			process.StartInfo.Arguments= "/C ipconfig -all | findstr /i \"ipv4 description physi\" > infoIpMac.txt";
+			process.Start();
+		}
+		
+		public void ActiveSniff(int interfa){ // lance le sniffer en fonction de l'interface choisi
+			process.StartInfo.Arguments= "/C WinDump -i "+interfa;
+			process.Start();
+		}
 		
 	}
 }
