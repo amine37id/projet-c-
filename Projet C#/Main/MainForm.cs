@@ -7,6 +7,7 @@
  * Pour changer ce modèle utiliser Outils | Options | Codage | Editer les en-têtes standards.
  */
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -25,9 +26,30 @@ namespace Main
 			//
 			InitializeComponent();
 			
+			/*lbProtection.Items.Add("Type de protection :");
+			lbProtection.Items.Add("    - Arp poisoning"); // 4 espaces
+			lbProtection.setFileToListbox(this.openFileDialog.FileName,this.lstValeurs);*/
+			string[] allLinesPro = File.ReadAllLines(@"lbProtection.txt"); // reads all lines from text file
+			lbProtection.Items.AddRange(allLinesPro);
+			//lbProtection.Items.Add("- Arp poisonning");
+			
+			string[] allLinesInfo = File.ReadAllLines(@"lbInfo.txt"); // reads all lines from text file
+			lbInfo.Items.AddRange(allLinesInfo);
+			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void BtActiverClick(object sender, EventArgs e)
+		{
+	
+		}
+		
+		
+			
+		
+		
+		
+		
 	}
 }

@@ -4,3 +4,11 @@ C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\bin\D
 C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.csprojResolveAssemblyReference.cache
 C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.exe
 C:\Users\magic\Desktop\M2 - OPSIE\Cours\C#\Projet\projet-c-\Projet C#\Main\obj\Debug\Main.pdb
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\bin\Debug\Main.exe.config
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\bin\Debug\Main.exe
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\bin\Debug\Main.pdb
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\obj\Debug\Main.csprojResolveAssemblyReference.cache
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\obj\Debug\Main.exe
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\obj\Debug\Main.pdb
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\obj\Debug\Main.MainForm.resources
+C:\Users\VmWin\Documents\projet-c-\Projet C#\Main\obj\Debug\Main.csproj.GenerateResource.Cache
